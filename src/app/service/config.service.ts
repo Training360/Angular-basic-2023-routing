@@ -12,7 +12,7 @@ export class ConfigService {
 
   navigationItems: INavItem[] = [
     {text: 'Home', link: '/'},
-    {text: 'Tickets', link: '/tickets'},
+    {text: 'Tickets', link: '/ticket'},
     {text: 'About', link: '/about'},
   ];
 
