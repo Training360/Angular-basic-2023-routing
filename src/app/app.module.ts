@@ -10,6 +10,9 @@ import { BtnGroupComponent } from './common/btn-group/btn-group.component';
 import { SelectDirective } from './common/btn-group/select.directive';
 import { BooleanPipe } from './pipe/boolean.pipe';
 import { ArrayFilterPipe } from './pipe/array-filter.pipe';
+import { HomeComponent } from './page/home/home.component';
+import { TicketsComponent } from './page/tickets/tickets.component';
+import { AboutComponent } from './page/about/about.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { ArrayFilterPipe } from './pipe/array-filter.pipe';
     BtnGroupComponent,
     SelectDirective,
     BooleanPipe,
-    ArrayFilterPipe
+    ArrayFilterPipe,
+    HomeComponent,
+    TicketsComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
