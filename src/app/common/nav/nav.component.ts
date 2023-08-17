@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { ConfigService } from 'src/app/service/config.service';
 
 @Component({
   selector: 'app-nav',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent {
+
+  config = inject(ConfigService);
+
+  items = this.config.navigationItems;
 
 }
