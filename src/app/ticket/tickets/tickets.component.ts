@@ -1,4 +1,5 @@
 import { Component, inject } from '@angular/core';
+import { Router } from '@angular/router';
 import { IBtn, IBtnGroupOutput } from 'src/app/common/btn-group/btn-group.component';
 import { Ticket } from 'src/app/model/ticket';
 import { TicketService } from 'src/app/service/ticket.service';
@@ -9,6 +10,9 @@ import { TicketService } from 'src/app/service/ticket.service';
   styleUrls: ['./tickets.component.scss']
 })
 export class TicketsComponent {
+
+  router: Router = inject(Router);
+
   ticketService: TicketService = inject(TicketService);
 
   title = 'angular-directives';
@@ -66,7 +70,8 @@ export class TicketsComponent {
         this.ticketService.dispatch('delete', (details.data as Ticket));
         break;
       case 'show':
-        this.ticketService.dispatch('get', details.data.id);
+        this.router.navigate(['/ticket', 'edit', details.data.id]);
+        // this.ticketService.dispatch('get', details.data.id);
         break;
     }
   }
