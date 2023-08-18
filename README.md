@@ -32,7 +32,12 @@
 
 ## Lesson-07
 - `ng g c ticket/ticket-editor --module ticket.module`
-- [TicketRoutingModule](src\app\ticket\ticket-routing.module.ts)
+- [TicketRoutingModule](src/app/ticket/ticket-routing.module.ts)
 - [TicketsComponent](src/app/page/tickets/tickets.component.ts)
 
-
+## Lesson-08
+- [AppRoutingModule](src/app/app-routing.module.ts)
+- `imports: [RouterModule.forRoot(routes, {bindToComponentInputs: true})],`
+- [TicketEditorComponent](src/app/ticket/ticket-editor/ticket-editor.component.ts)
+- [TicketEditorComponent HTML](src/app/ticket/ticket-editor/ticket-editor.component.html)
+  
